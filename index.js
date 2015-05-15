@@ -5,6 +5,7 @@
 var core       = require('./lib/core');
 var comparison = require('./lib/comparison');
 var element    = require('./lib/element');
+var evaluation = require('./lib/evaluation');
 
 // 
 // Extend core
@@ -12,6 +13,7 @@ var element    = require('./lib/element');
 
 comparison(core);
 element(core);
+evaluation(core);
 
 //
 // Module Dependencies
