@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.coding.net:wangshunightowl/operator-assertion.git"
+    "url": "https://github.com/ziliwesley/operator-assertion.git"
   },
   "keywords": [
     "mongodb",
