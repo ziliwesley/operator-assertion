@@ -38,24 +38,26 @@ describe('operator', function () {
     });
 
     it('#test({ now: { temp: 12 }, code: \'010\',name: \'北京\' }, { now: { temp: { $gte: ' +
-        '-50, $lte: 150 }, name: { $type: \'ChineseChars(1)\' } } }) should be fasle', function () {
-        op.test({
-            now: {
-                temp: 12
-            },
-            code: '010',
-            name: '北京'
-        }, {
-            now: {
-                temp: {
-                    $gte: -50,
-                    $lte: 150
-                }
-            },
-            name: {
-                $type: 'ChineseChars(1)'
-            },
-            code: '010'
-        }).should.be.exactly(false);
+        '-50, $lte: 150 }, name: { $type: \'ChineseChars(1)\' } } }) should throw an Error', function () {
+        (function () {
+            op.test({
+                now: {
+                    temp: 12
+                },
+                code: '010',
+                name: '北京'
+            }, {
+                now: {
+                    temp: {
+                        $gte: -50,
+                        $lte: 150
+                    }
+                },
+                name: {
+                    $type: 'ChineseChars(1)'
+                },
+                code: '010'
+            });
+        }).should.throw(Error);
     });
 });

@@ -127,3 +127,11 @@ in the future:
     - $where (*partial*)
 
 - Array (*NOT IMPLEMENTED YET*)
+
+### Todo
+
+* Add in an implementation of AssertError or something.
+
+### Changelogs
+
+* 0.3.0 op.test() now throw an error if the test failed.
