@@ -1,6 +1,6 @@
 {
   "name": "operator-assertion",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Use mongodb style opeartors to do assertion.",
   "main": "index.js",
   "scripts": {
